@@ -1,0 +1,67 @@
+.card {
+    background-color: rgb(69, 72, 79);
+    color: rgb(195, 195, 195);
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-flow: row;
+    height: 32rem;
+    align-items: center;
+    justify-items: center;
+    padding: 0.3rem;
+}
+
+h1{
+    text-align: center;
+    color: darkgray;
+}
+
+
+.star {
+    width: 1.3rem;
+}
+
+.Average {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.container {
+    margin: 8rem;
+}
+
+.cardImg {
+    grid-row: 1/-1;
+    grid-column: 1;
+    width: 90%;
+    place-self: center;
+}
+
+
+.cardTitle{
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-bottom: solid 1px gray;
+    color: aliceblue;
+}
+
+.cardText{
+    font-size: 0.9rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+@media screen AND (max-width: 1000px) {
+    .container {
+        margin: 2rem;
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+}
